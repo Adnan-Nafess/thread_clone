@@ -7,7 +7,7 @@ A full-stack social media web application inspired by Threads, built using the *
 - Create, Edit, Delete Threads (Posts)
 - Like, Comment, Repost System
 - Follow/Unfollow Users
-
+- Dark Mode toggle
 ## 🛠️ Technologies Used
 - **Frontend:** React, Redux Toolkit, Tailwind CSS
 - **Backend:** Node.js, Express.js, MongoDB
@@ -53,8 +53,6 @@ API_SECRET= your_secret_key
 🔗 **Live App:** [Your Deployment Link](https://thread-clone-psi-ten.vercel.app/)  
 
 ## 📸 Screenshots
-![Home Page](https://your-image-url.com)
+![Home Page](![alt text](image.png))
 
-## 📝 License
-This project is licensed under the MIT License.
 
