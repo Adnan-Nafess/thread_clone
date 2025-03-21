@@ -18,12 +18,12 @@ const Post = ({ e }) => {
   const dispatch = useDispatch();
 
   const handleOpenMenu = (event) => {
-    dispatch(addPostId(event._id));
+    dispatch(addPostId(e._id));
     dispatch(toggleMyMenu(event.currentTarget));
   };
 
   const checkIsAdmin = () => {
-    if (e?.admin?._id === myInfo._id) {
+    if (e?.admin._id === myInfo._id) {
       setIsAdmin(true);
       return;
     }

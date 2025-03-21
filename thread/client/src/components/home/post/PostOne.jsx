@@ -18,7 +18,7 @@ const PostOne = ({ e }) => {
         alignItems={"center"}
         justifyContent={"space-between"}
       >
-        <Link to={`/profile/threads/${e?.admin?._id}`}>
+        <Link to={`/profile/threads/${e?.admin._id}`}>
           <Badge
             overlap="circular"
             anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
@@ -41,8 +41,8 @@ const PostOne = ({ e }) => {
             }
           >
             <Avatar
-              alt={e ? e.admin?.userName : ""}
-              src={e ? e.admin?.profilePic : ""}
+              alt={e ? e.admin.userName : ""}
+              src={e ? e.admin.profilePic : ""}
               sx={{ width: _700 ? 40 : 32, height: _700 ? 40 : 32 }}
             />
           </Badge>
@@ -75,13 +75,13 @@ const PostOne = ({ e }) => {
                 }}
               >
                 <Avatar
-                  src={e?.comments[0].admin?.profilePic}
-                  alt={e?.comments[0].admin?.userName}
+                  src={e?.comments[0].admin.profilePic}
+                  alt={e?.comments[0].admin.userName}
                 />
                 {e.comments.length > 1 ? (
                   <Avatar
-                    src={e?.comments[1].admin?.profilePic}
-                    alt={e?.comments[1].admin?.userName}
+                    src={e?.comments[1].admin.profilePic}
+                    alt={e?.comments[1].admin.userName}
                   />
                 ) : null}
               </AvatarGroup>

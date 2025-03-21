@@ -80,7 +80,7 @@ const PostTwo = ({ e }) => {
               fontSize={_300 ? "1rem" : "0.8rem"}
               fontWeight={"bold"}
             >
-              {e ? e.admin?.userName : ""}
+              {e ? e.admin.userName : ""}
             </Typography>
             <Link to={`/post/${e?._id}`} className="link">
               <Typography
